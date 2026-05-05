@@ -8,7 +8,7 @@ if ! command -v git &> /dev/null; then
 fi
 
 # Clone the repository with the setup script
-git clone https://github.com/rcushen/setup-scripts.git
+[ -d setup-scripts ] || git clone https://github.com/rcushen/setup-scripts.git
 cd setup-scripts
 
 # Make the setup script executable and run it
